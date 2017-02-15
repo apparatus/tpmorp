@@ -17,7 +17,7 @@ var morp = require('tpmorp')(readline)
 ```
 
 ##Example
-The example code shows how to use tpmorp in a imple hello/goodbye CLI interface. See `example.js`
+The example code shows how to use tpmorp in a simple hello/goodbye CLI interface. See `example.js`
 
 ```javascript
 'use strict'

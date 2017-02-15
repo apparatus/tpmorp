@@ -1,0 +1,30 @@
+{
+  "name": "tpmorp",
+  "description": "simple lightweight non-invasive CLI shell with history and autocompletion",
+  "version": "1.0.0",
+  "keywords": [
+    "CLI",
+    "shell",
+    "autocomplete",
+    "history",
+    "simple",
+    "lightweight",
+    "fuge",
+    "vorpal"
+  ],
+  "main": "index.js",
+  "author": "Peter Elger <peter.elger@nearform.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo 'linting...' && spacey-standard | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apparatus/tpmorp.git"
+  },
+  "devDependencies": {
+    "snazzy": "^5.0.0",
+    "spacey-standard": "^3.0.0"
+  },
+  "license": "MIT"
+}

@@ -44,21 +44,25 @@ module.exports = function (readline) {
       })
 
       // if exact match check sub command entries
-      if (command && commands[command].sub) {
-        commands[command].sub.forEach(function (sub) {
-          if (sub.indexOf(s[1]) === 0) {
-            ml2.push(command + ' ' + sub)
-          }
-        })
-
-        // no sub match so return all possibilities
-        if (ml2.length === 0) {
+      if (command) {
+        if (commands[command].sub) {
           commands[command].sub.forEach(function (sub) {
-            ml2.push(command + ' ' + sub)
+            if (sub.indexOf(s[1]) === 0) {
+              ml2.push(command + ' ' + sub)
+            }
           })
-        }
 
-        result = [ml2, line]
+          // no sub match so return all possibilities
+          if (ml2.length === 0) {
+            commands[command].sub.forEach(function (sub) {
+              ml2.push(command + ' ' + sub)
+            })
+          }
+
+          result = [ml2, line]
+        } else {
+          result = [[], line]
+        }
       }
     }
 

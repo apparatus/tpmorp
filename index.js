@@ -85,7 +85,7 @@ module.exports = function (readline) {
     var args = null
     var s
 
-    line.trim()
+    line = line.trim()
     line.replace(/\s+/g, ' ')
     s = line.split(' ')
 
@@ -113,6 +113,8 @@ module.exports = function (readline) {
       var result = match(line)
       cb(result.command ? null : 'invalid command', result.command, result.args)
     })
+
+    return rl
   }
 
 

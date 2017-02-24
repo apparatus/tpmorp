@@ -86,7 +86,7 @@ module.exports = function (readline) {
     var s
 
     line = line.trim()
-    line.replace(/\s+/g, ' ')
+    line = line.replace(/\s+/g, ' ')
     s = line.split(' ')
 
     keys.forEach(function (key) {

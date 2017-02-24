@@ -1,7 +1,7 @@
 {
   "name": "tpmorp",
   "description": "simple lightweight non-invasive CLI shell with history and autocompletion",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "CLI",
     "shell",

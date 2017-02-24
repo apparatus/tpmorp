@@ -111,7 +111,7 @@ module.exports = function (readline) {
 
     rl.on('line', function (line) {
       var result = match(line)
-      cb(result.command ? null : 'invalid command', result.command, result.args)
+      cb(result.command ? null : 'invalid command', result.command, result.args, line)
     })
 
     return rl
